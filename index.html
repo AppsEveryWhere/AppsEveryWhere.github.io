@@ -3,114 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AppsEveryWhere | Hariharan Sivakumar</title>
+  <title>AppsEveryWhere</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: #f2f4f8;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #2c3e50, #4ca1af);
-      padding: 4rem 2rem;
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-    }
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    section h2 {
-      font-size: 2rem;
-      color: #2c3e50;
-      border-bottom: 2px solid #4ca1af;
-      margin-bottom: 1rem;
-    }
-    .services ul, .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li, .projects li {
-      background: #fff;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border-left: 5px solid #4ca1af;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #2c3e50;
-      color: #fff;
-    }
-    a {
-      color: #4ca1af;
-      text-decoration: none;
-    }
-    .contact a {
-      display: inline-block;
-      margin-top: 0.5rem;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f9f9fb; color: #333; }
+    header, nav, footer { background: #2c3e50; color: white; padding: 1rem 2rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    section { margin-bottom: 3rem; }
+    h2 { font-size: 2rem; border-bottom: 2px solid #4ca1af; margin-bottom: 1rem; padding-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; line-height: 1.6; }
+    .products img { max-width: 100%; height: auto; border-radius: 10px; margin-top: 1rem; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #4ca1af; color: white; border: none; padding: 0.7rem 1.5rem; cursor: pointer; border-radius: 5px; }
+    form button:hover { background: #3a8a9e; }
+    .image-banner { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
   </style>
 </head>
 <body>
   <header>
     <h1>AppsEveryWhere</h1>
-    <p>Building Seamless Digital Experiences – iOS | Android | Web</p>
+    <p>Mobile & Web Solutions for Every Business</p>
   </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+  </nav>
+
   <main>
-    <section class="about">
+    <section id="home">
+      <h2>Home</h2>
+      <img src="https://source.unsplash.com/featured/?technology,code" alt="Coding Image" class="image-banner">
+      <p>Welcome to <strong>AppsEveryWhere</strong> — a digital space where ideas are transformed into sleek, scalable mobile and web applications.</p>
+      <p>We specialize in building iOS and Android apps using native and cross-platform technologies, as well as dynamic websites and web apps with modern JavaScript frameworks like React. Whether you’re a startup or an established company, we help bring your product vision to life.</p>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <div class="products">
+        <h3>1. Healthcare Apps</h3>
+        <img src="https://source.unsplash.com/featured/?healthcare,app" alt="Healthcare App">
+        <p>Our healthcare solutions help clinics and hospitals manage appointments, records, prescriptions, and communications securely and efficiently.</p>
+
+        <h3>2. Thanvi Boutique</h3>
+        <img src="https://thanviboutique.com/assets/images/collection_1.jpg" alt="Thanvi Boutique">
+        <p>Thanvi Boutique is a beautiful shopping app and site that lets customers browse, shop, and manage fashion collections easily. Visit: <a href="https://thanviboutique.com" target="_blank">thanviboutique.com</a></p>
+      </div>
+    </section>
+
+    <section id="about">
       <h2>About</h2>
-      <p>Hi! I'm <strong>Hariharan Sivakumar</strong>, a passionate freelance developer who crafts high-performance mobile and web applications. At AppsEveryWhere, my mission is to bring every idea to life — beautifully, responsively, and accessibly.</p>
-    </section>
+      <img src="https://source.unsplash.com/featured/?contact,office" alt="Contact Image" class="image-banner">
+      <p><strong>Founder:</strong> Hariharan Sivakumar</p>
+      <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
 
-    <section class="services">
-      <h2>Services</h2>
-      <ul>
-        <li>📱 iOS & Android App Development (Native & Flutter)</li>
-        <li>🌐 Web App Development using React, Firebase, etc.</li>
-        <li>🔁 Cross-platform Solutions</li>
-        <li>🧩 Admin Panels, Business Tools, and UI Dashboards</li>
-      </ul>
-    </section>
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
 
-    <section class="projects">
-      <h2>Featured Projects</h2>
-      <ul>
-        <li><strong>Nextcare Anywhere</strong> – Healthcare consultation platform with real-time features.</li>
-        <li><strong>Thank Boutique</strong> – Fashion e-commerce app for boutique shopping and order tracking.</li>
-        <li><strong>Healthcare Apps</strong> – Medical management tools for private clinics and hospital workflows.</li>
-      </ul>
-    </section>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
-      <p>🌐 Website: <a href="https://appseverywhere.in" target="_blank">appseverywhere.in</a></p>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 AppsEveryWhere. Built by Hariharan Sivakumar.
+    &copy; 2025 AppsEveryWhere • Built with love by Hariharan Sivakumar
   </footer>
 </body>
 </html>
