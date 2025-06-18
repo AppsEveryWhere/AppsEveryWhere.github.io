@@ -52,7 +52,7 @@ To become the go-to freelance development partner for startups and businesses ac
 - **Stack:** Flutter + Firebase
 - **Description:** Cross-platform healthcare app for remote consultations, patient records, and scheduling.
 
-### 👗 Thank Boutique
+### 👗 Thanvi Boutique
 - **Type:** Ecommerce / Fashion Boutique
 - **Stack:** Android + Firebase
 - **Description:** Boutique shopping app with product catalog, checkout system, and admin panel.
