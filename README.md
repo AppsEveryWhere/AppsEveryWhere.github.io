@@ -1,3 +1,4 @@
+
 # 🌐 AppsEveryWhere
 
 **Mobile & Web App Development Solutions**  
@@ -7,11 +8,13 @@ Crafting reliable and user-centric digital experiences for iOS, Android, Web, an
 
 ## 🚀 About Us
 
-**AppsEveryWhere** is a freelance app development studio committed to building scalable, elegant, and custom-made solutions for businesses and individuals. With experience in mobile, web, and cross-platform technologies, we bring your ideas to life across all devices.
+**AppsEveryWhere** is a freelance app development studio led by **Hariharan Sivakumar**, committed to building scalable, elegant, and custom-made solutions for businesses and individuals. With experience in mobile, web, and cross-platform technologies, we bring your ideas to life across all devices.
+
+Our mission is to empower businesses through intuitive technology, ensuring that innovation is accessible **everywhere**.
 
 ---
 
-## 🎯 Mission & Vision
+## 🌟 Mission & Vision
 
 **Mission:**  
 Empower businesses through high-quality app solutions that are functional, elegant, and accessible.
@@ -34,7 +37,7 @@ To become the go-to freelance development partner for startups and businesses ac
   - Full-stack application development
 
 - **🎨 UI/UX Prototyping**
-  - Figma designs
+  - Wireframes and mockups using Figma
   - MVP & clickable prototypes
 
 - **🔧 App Maintenance**
@@ -49,7 +52,7 @@ To become the go-to freelance development partner for startups and businesses ac
 - **Stack:** Flutter + Firebase
 - **Description:** Cross-platform healthcare app for remote consultations, patient records, and scheduling.
 
-### 👗 Thanvi Boutique
+### 👗 Thank Boutique
 - **Type:** Ecommerce / Fashion Boutique
 - **Stack:** Android + Firebase
 - **Description:** Boutique shopping app with product catalog, checkout system, and admin panel.
@@ -63,10 +66,10 @@ To become the go-to freelance development partner for startups and businesses ac
 
 ## 👨‍💻 Founder
 
-**Your Name**  
+**Hariharan Sivakumar**  
 Founder | Full-Stack App Developer  
-Location: Erode, Tamil Nadu  
-4+ years in mobile and web development. Passionate about scalable architecture and impactful design.
+Location: Erode, Tamil Nadu, India  
+5+ years of experience in mobile and web development. Passionate about scalable architecture and impactful design. Dedicated to helping businesses grow through custom technology.
 
 ---
 
@@ -76,13 +79,16 @@ Location: Erode, Tamil Nadu
 - **📧 Email:** yourname@appseverywhere.in
 - **📱 Phone:** +91-XXXXXXXXXX
 - **📍 Location:** Tamil Nadu, India
+- **🔗 LinkedIn / Instagram:** (Add your profiles)
 
 ---
 
-## 📌 Note
+## 📄 Note
 
-This is a freelance venture and currently not a registered company. Domain secured and growing client base.
+This is a freelance venture and currently not a registered company. Domain secured and growing client base. More projects, testimonials, and case studies coming soon.
 
 ---
 
-> 🚧 More projects, testimonials, and case studies coming soon!
+> "Delivering digital innovation, everywhere."
+
+---
