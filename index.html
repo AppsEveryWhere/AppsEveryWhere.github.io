@@ -218,12 +218,158 @@
       <p class="about-text">
         AppsEveryWhere, founded by Hariharan Sivakumar, builds modern mobile and web applications tailored for startups and businesses. We specialize in iOS, Android, React, and cross-platform solutions with a focus on performance and user experience. From healthcare tools to e-commerce apps like Thanvi Boutique, we bring ideas to life — everywhere.
       </p>
-      <form class="contact-form" action="mailto:hariharansivakumar@appseverywhere.in" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <form class="contact-form" onsubmit="return sendEmail(this)">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Project Subject" required />
+    <textarea name="message" placeholder="Describe your app idea or requirement" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <script>
+    function sendEmail(form) {
+      const name = encodeURIComponent(form.name.value);
+      const email = encodeURIComponent(form.email.value);
+      const subject = encodeURIComponent(form.subject.value);
+      const message = encodeURIComponent(form.message.value);
+
+      const pitch = `
+  Hi, my name is ${decodeURIComponent(name)}.
+
+  I'm reaching out regarding "${decodeURIComponent(subject)}".
+
+  Here's a brief overview of what I need help with:
+  ${decodeURIComponent(message)}
+
+  You can reach me back at: ${decodeURIComponent(email)}.
+
+  Looking forward to working with you!
+
+  - ${decodeURIComponent(name)}
+      `;
+
+      const mailtoLink = `mailto:hariharansivakumar@appseverywhere.in?subject=${subject}&body=${encodeURIComponent(pitch)}`;
+      window.location.href = mailtoLink;
+      return false; // Prevent default form submit
+    }
+  </script>
+</form>
+
+<script>
+  function sendEmail(form) {
+    const name = encodeURIComponent(form.name.value);
+    const email = encodeURIComponent(form.email.value);
+    const subject = encodeURIComponent(form.subject.value);
+    const message = encodeURIComponent(form.message.value);
+
+    const pitch = `
+Hi, my name is ${decodeURIComponent(name)}.
+
+I'm reaching out regarding "${decodeURIComponent(subject)}".
+
+Here's a brief overview of what I need help with:
+${decodeURIComponent(message)}
+
+You can reach me back at: ${decodeURIComponent(email)}.
+
+Looking forward to working with you!
+
+- ${decodeURIComponent(name)}
+    `;
+
+    const mailtoLink = `mailto:hariharansivakumar@appseverywhere.in?subject=${subject}&body=${encodeURIComponent(pitch)}`;
+    window.location.href = mailtoLink;
+    return false; // Prevent default form submit
+  }
+</script>
+</form>
+
+<script>
+  function sendEmail(form) {
+    const name = encodeURIComponent(form.name.value);
+    const email = encodeURIComponent(form.email.value);
+    const subject = encodeURIComponent(form.subject.value);
+    const message = encodeURIComponent(form.message.value);
+
+    const pitch = `
+Hi, my name is ${decodeURIComponent(name)}.
+
+I'm reaching out regarding "${decodeURIComponent(subject)}".
+
+Here's a brief overview of what I need help with:
+${decodeURIComponent(message)}
+
+You can reach me back at: ${decodeURIComponent(email)}.
+
+Looking forward to working with you!
+
+- ${decodeURIComponent(name)}
+    `;
+
+    const mailtoLink = `mailto:hariharansivakumar@appseverywhere.in?subject=${subject}&body=${encodeURIComponent(pitch)}`;
+    window.location.href = mailtoLink;
+    return false; // Prevent default form submit
+  }
+</script>
+</form>
+
+<script>
+  function sendEmail(form) {
+    const name = encodeURIComponent(form.name.value);
+    const email = encodeURIComponent(form.email.value);
+    const subject = encodeURIComponent(form.subject.value);
+    const message = encodeURIComponent(form.message.value);
+
+    const pitch = `
+Hi, my name is ${decodeURIComponent(name)}.
+
+I'm reaching out regarding "${decodeURIComponent(subject)}".
+
+Here's a brief overview of what I need help with:
+${decodeURIComponent(message)}
+
+You can reach me back at: ${decodeURIComponent(email)}.
+
+Looking forward to working with you!
+
+- ${decodeURIComponent(name)}
+    `;
+
+    const mailtoLink = `mailto:hariharansivakumar@appseverywhere.in?subject=${subject}&body=${encodeURIComponent(pitch)}`;
+    window.location.href = mailtoLink;
+    return false; // Prevent default form submit
+  }
+</script>
+</form>
+
+<script>
+  function sendEmail(form) {
+    const name = encodeURIComponent(form.name.value);
+    const email = encodeURIComponent(form.email.value);
+    const subject = encodeURIComponent(form.subject.value);
+    const message = encodeURIComponent(form.message.value);
+
+    const pitch = `
+Hi, my name is ${decodeURIComponent(name)}.
+
+I'm reaching out regarding "${decodeURIComponent(subject)}".
+
+Here's a brief overview of what I need help with:
+${decodeURIComponent(message)}
+
+You can reach me back at: ${decodeURIComponent(email)}.
+
+Looking forward to working with you!
+
+- ${decodeURIComponent(name)}
+    `;
+
+    const mailtoLink = `mailto:hariharansivakumar@appseverywhere.in?subject=${subject}&body=${encodeURIComponent(pitch)}`;
+    window.location.href = mailtoLink;
+    return false; // Prevent default form submit
+  }
+</script>
+
     </section>
   </div>
 </body>
