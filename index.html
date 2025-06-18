@@ -4,80 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AppsEveryWhere</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #f9f9fb; color: #333; }
-    header, nav, footer { background: #2c3e50; color: white; padding: 1rem 2rem; text-align: center; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
-    section { margin-bottom: 3rem; }
-    h2 { font-size: 2rem; border-bottom: 2px solid #4ca1af; margin-bottom: 1rem; padding-bottom: 0.5rem; }
-    p { margin-bottom: 1rem; line-height: 1.6; }
-    .products img { max-width: 100%; height: auto; border-radius: 10px; margin-top: 1rem; }
-    form input, form textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 5px; }
-    form button { background: #4ca1af; color: white; border: none; padding: 0.7rem 1.5rem; cursor: pointer; border-radius: 5px; }
-    form button:hover { background: #3a8a9e; }
-    .image-banner { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F7FAFC;
+      color: #0D141C;
+    }
+    .container {
+      max-width: 1280px;
+      width: 100%;
+      padding: 0 5vw;
+      margin: 0 auto;
+    }
+    header {
+      background-color: #9EB364;
+      padding: 12px 5vw;
+      border-bottom: 1px solid #E5E8EB;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #0D141C;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .hero {
+      background-image: url('https://placehold.co/1200x480');
+      background-size: cover;
+      background-position: center;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    .hero h1 {
+      color: white;
+      font-size: 48px;
+      font-weight: 900;
+    }
+    .btn-primary {
+      margin-top: 20px;
+      background-color: #2194F2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    section {
+      margin: 40px 0;
+    }
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .service-card, .product-card {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .service-card img, .product-card img {
+      width: 300px;
+      height: auto;
+    }
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+    .card-content h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card-content p {
+      font-size: 16px;
+      color: #4A789C;
+    }
+    .about-text {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .contact-form button {
+      background-color: #2194F2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>AppsEveryWhere</h1>
-    <p>Mobile & Web Solutions for Every Business</p>
+    <div class="nav-logo">AppsEveryWhere</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
   </header>
+  <div class="container">
+    <div class="hero">
+      <div>
+        <h1>We build the best mobile and web apps</h1>
+        <button class="btn-primary">Get a free quote</button>
+      </div>
+    </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-  </nav>
-
-  <main>
-    <section id="home">
-      <h2>Home</h2>
-      <img src="https://source.unsplash.com/featured/?technology,code" alt="Coding Image" class="image-banner">
-      <p>Welcome to <strong>AppsEveryWhere</strong> — a digital space where ideas are transformed into sleek, scalable mobile and web applications.</p>
-      <p>We specialize in building iOS and Android apps using native and cross-platform technologies, as well as dynamic websites and web apps with modern JavaScript frameworks like React. Whether you’re a startup or an established company, we help bring your product vision to life.</p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-card">
+        <img src="Mobile.svg" alt="Mobile App Development" />
+        <div class="card-content">
+          <h3>Mobile App Development</h3>
+          <p>We specialize in building custom iOS & Android apps, from concept to launch.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://placehold.co/300x200" alt="Web App Development" />
+        <div class="card-content">
+          <h3>Web App Development</h3>
+          <p>We create responsive web apps using React and Firebase that work across all browsers and devices.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://placehold.co/300x200" alt="Cross-platform Development" />
+        <div class="card-content">
+          <h3>Cross-platform Development</h3>
+          <p>We build apps that run on multiple platforms like Flutter, React Native, and more.</p>
+        </div>
+      </div>
     </section>
 
     <section id="products">
-      <h2>Products</h2>
-      <div class="products">
-        <h3>1. Healthcare Apps</h3>
-        <img src="https://source.unsplash.com/featured/?healthcare,app" alt="Healthcare App">
-        <p>Our healthcare solutions help clinics and hospitals manage appointments, records, prescriptions, and communications securely and efficiently.</p>
-
-        <h3>2. Thanvi Boutique</h3>
-        <img src="https://thanviboutique.com/assets/images/collection_1.jpg" alt="Thanvi Boutique">
-        <p>Thanvi Boutique is a beautiful shopping app and site that lets customers browse, shop, and manage fashion collections easily. Visit: <a href="https://thanviboutique.com" target="_blank">thanviboutique.com</a></p>
+      <h2>Our Products</h2>
+      <div class="product-card">
+        <img src="https://placehold.co/300x200" alt="Healthcare App" />
+        <div class="card-content">
+          <h3>Healthcare Apps</h3>
+          <p>Powerful tools for clinics, hospitals, and medical professionals with modern interfaces and efficiency.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://placehold.co/300x200" alt="Thanvi Boutique" />
+        <div class="card-content">
+          <h3>Thanvi Boutique</h3>
+          <p>Elegant fashion e-commerce solution. <a href="https://thanviboutique.com" target="_blank">Visit site</a></p>
+        </div>
       </div>
     </section>
 
     <section id="about">
       <h2>About</h2>
-      <img src="https://source.unsplash.com/featured/?contact,office" alt="Contact Image" class="image-banner">
-      <p><strong>Founder:</strong> Hariharan Sivakumar</p>
-      <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
-
-      <form>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
+      <p class="about-text">
+        AppsEveryWhere, founded by Hariharan Sivakumar, builds modern mobile and web applications tailored for startups and businesses. We specialize in iOS, Android, React, and cross-platform solutions with a focus on performance and user experience. From healthcare tools to e-commerce apps like <a href="https://thanviboutique.com">Thanvi Boutique</a>, we bring ideas to life — everywhere.
+      </p>
+      <form class="contact-form" action="mailto:hariharansivakumar@appseverywhere.in" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
-  </main>
-
-  <footer>
-    &copy; 2025 AppsEveryWhere • Built with love by Hariharan Sivakumar
-  </footer>
+  </div>
 </body>
 </html>
